@@ -1,7 +1,7 @@
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
-  background: linear-gradient(to bottom, #f8f1f1, #ffe6e6);
+  background: linear-gradient(to bottom, #fff0f5, #ffe6e6);
   color: #333;
   margin: 0;
   padding: 0;
@@ -12,9 +12,10 @@ body {
 }
 
 .main-heading {
-  font-size: 3em;
+  font-size: 3.5em;
   color: #b3003b;
   margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .subtext {
@@ -50,4 +51,13 @@ footer {
   margin-top: 50px;
   font-size: 0.9em;
   color: #999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
